@@ -1,0 +1,96 @@
+/* 첫 페이지, 서브 페이지 공통 모바일 버전 css */
+
+header {
+    left: 0;
+    padding: 0;
+    transform: translateX(0);
+    background: #fff;
+    width: 100%; height: 3.5rem;
+}
+
+h1 {
+    background:url(../images/icon_logo_mobile.png) no-repeat center / 100% auto;
+    width: 1.75rem; height: 1.75rem;
+    border-radius: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: none;
+}
+header nav ul {
+    display: block;
+    padding: 1.5rem 0 0;
+}
+header nav ul li ~ li {
+    padding : 1.6rem 0 0;
+}
+header nav ul li {
+    padding: 0;
+}
+header nav ul li a:hover {
+    color: #4621AD;
+    font-weight: bold;
+}
+header nav ul li a::after {
+    display: none;
+}
+header .navigation {
+    display: none;
+    height: 14.3rem;
+    padding: 2.35rem 0 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 3.5rem; right: 0; left: 0;
+    background-color: #fff;
+    text-align: center;
+}
+/* header .navigation.active {
+    position: absolute;
+    top: 3.5rem; right: 0; left: 0;
+    background-color: #fff;
+    text-align: center;
+} */
+header .navigation input {
+    width: 10.4335rem;
+    height: 1.7785rem;
+    border-radius: 1.7785rem;
+    background-color: #F6F6F6;
+    border: none;
+    background: url(../images/icon_search.png) no-repeat 3.35rem center / .919rem auto #f6f6f6;
+}
+header .navigation input.active {
+    background-image: none;
+}
+header .navigation input::placeholder {
+    text-align: center;
+    /* 글씨 들여쓰기(아이콘 들어갈 자리만큼 띄어줌) */
+    text-indent: 1.4935rem;
+}
+header .btn_menu, .search, .btn_alarm {
+    display: block;
+}
+header .btn_menu, .btn_alarm {
+    position: absolute;
+    top: 0;
+    width: 3.5rem; height: 3.5rem;
+}
+header .btn_menu {
+    left: 0;
+    background: url(../images/btn_menu.png) no-repeat center / .8315rem auto; 
+}
+header .btn_menu.active {
+    background: url(../images/btn_menu_down.png) no-repeat center / .8315rem auto;
+}
+header .btn_alarm {
+    right: 0;
+    background: url(../images/btn_alarm.png) no-repeat center / 0.8rem auto;
+}
+header .btn_alarm.on::after {
+    content: '';
+    position: absolute;
+    background-color: #F28CAF;
+    right: 1.2rem; top: 1.1rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}

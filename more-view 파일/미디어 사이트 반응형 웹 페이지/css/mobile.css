@@ -1,0 +1,217 @@
+/* 서브페이지 mobile 전용 */
+
+header {
+    box-shadow: 0 .1rem .3rem #0000000A;
+}
+h1 {
+    box-shadow: none;
+}
+
+/* main */
+main {
+    width: 100%;
+    padding: 2.35rem 2.45rem;
+    box-sizing: border-box;
+}
+.detail_info {
+    position: relative;
+    padding: 0 ;
+    height: auto;
+    margin: 0 0 3.25rem;
+    display: flex;
+    flex-direction: column;
+}
+.detail_info h2 {
+    padding: .9rem 0 .5rem;
+    order: 3;
+}
+.detail_info p {
+    order: 4;
+    padding: 0 0 1.35rem;
+}
+.detail_info > div {
+    display: flex;
+}
+.detail_info .thumb {
+    position: static;
+    order: 1;
+    width: calc(100% - 4.6155rem);
+}
+.detail_info .thumb .thumbnail {
+    width: 100%;
+    height: auto;
+}
+.detail_info .thumb .mark {
+    display: none;
+}
+.detail_info .more {
+    position: static;
+    background-image:none ;
+    width: 4.95rem;
+    height: 1.65rem;
+    line-height: 1.65rem;
+    border-radius: 1.65rem;
+    order: 5;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .55rem;
+    color: #fff;
+}
+.detail_info .list {
+    order: 2;
+    position: static;
+    width: calc(100% - 9.7545rem);
+    padding: 0 0 0 .6255rem;
+}
+.detail_info .list li {
+    float: none;
+    padding: 0 0 .4225rem;
+}
+.detail_info .list li button {
+    width: 100%;
+}
+.detail_info .list li img {
+    width: 100%;
+    height: calc(100% - 9.7545rem);
+}
+.detail_info .list li:last-child {
+    display: none;
+}
+
+
+.news_list ul{
+    flex-direction: column;
+}
+.news_list li ~ li {
+    margin-left: 0;
+    margin-top: 1.513rem;
+}
+.news_list li .info {
+    width: 100%;
+}
+.news_list li .info img {
+    height: auto;
+}
+.news_list li .info figcaption {
+    height: 4.9835rem;
+}
+.news_list li .info figcaption strong {
+    font-size: .65rem;
+}
+.news_list li .info figcaption span {
+    font-size: .55rem;
+}
+
+
+/* 서브2 audio page */
+.information {
+    display: none;
+}
+.play_list {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border: none;
+}
+.play_list .album {
+    text-align: center;
+}
+.play_list .album > img {
+    box-shadow: 0 .15rem .3rem #00000029;
+    width: 6.8175rem; height: 6.8175rem;
+    margin-bottom: 1.0825rem;
+}
+.play_list .album > div {
+    display: block;
+    padding: 0;
+}
+
+.play_list .mo_btn {
+    display: block;
+    padding: 2.7rem 0 0;
+    text-align: center;
+}
+.btn_type4 {
+    width: 4.45rem; height: 1.3rem;
+    border-radius: 1.3rem;
+    border: .05rem solid #4621AD;
+    font-size: .4rem;
+    line-height: 1.3rem;
+}
+.btn_type4.on {
+    background-color: #fff;
+    color: #4621AD;
+}
+.btn_type4.off {
+    background-color: #4621AD;
+    color: #fff;
+}
+.play_list .list ul {
+    overflow: visible;
+    height: auto;
+    padding: 2.05rem 0 0;
+}
+.play_list .list li {
+    height: 2rem;
+    color: #706B7B;
+    padding: 0;
+}
+.play_list .list li .play {
+    font-weight: bold;
+    opacity: .83;
+    text-align: left;
+    font-size: .7rem;
+    line-height: .9rem;
+}
+.play_list .list li .play::before {
+    display: none;
+}
+.play_list .list li .play span {
+    display: block;
+    opacity: .54;
+}
+.play_list .list li + li {
+    border: none;
+    padding-top: .85rem;
+}
+.play_list .list li div {
+    width: auto;
+}
+.play_list .list li .down , .play_list .list li span  {
+    display: none;
+}
+.play_list .list li .more {
+    display: block;
+    width: 2rem; height: 2rem;
+    background: url(../images/icon_three_dot.png) no-repeat center / .3rem auto;
+}
+
+.player {
+    background-color: #fff;
+    box-shadow: 0 -0.15rem .3rem #5B86E533;
+    height: 3.25rem;
+    padding: 0 2.35rem;
+}
+.player .player_info {
+    display: none;
+}
+.player .mo_player_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; height: 100%;
+    align-items: center;
+}
+.player .mo_player_info .icon_up {
+    width: 1.2rem;
+    height: .6605rem;
+}
+.player .mo_player_info p {
+    color: #4621AD;
+    font-weight: bold;
+}
+.player .mo_player_info p span {
+    font-weight: normal;
+}
+.player .mo_player_info .play-button {
+    width: 1.5rem; height: 1.5rem;
+}

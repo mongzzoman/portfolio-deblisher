@@ -1,0 +1,436 @@
+h1 {
+    box-shadow: 0 .15rem .3rem #00000042;
+}
+header {
+    /* 첫페이지 때문에 공통으로(style.css) 준 header의 position:absolute를 없애줘야해서 static 사용 */
+    position: static;
+    /* absolute를 없앴기 때문에 x축 다시 원래대로 돌려놓고 헤더 자체를 가운데로 놓기 위해 margin: 0 auto 사용 */
+    margin: 0 auto;
+    transform: translateX(0);
+    /* 이렇게 해줘야 header와 main의 내용이 겹치지않고 차례대로 나옴 */
+}
+header nav ul li a:hover {
+    color: #000000;
+}
+header nav ul li a::after {
+    background-color: #4723AE;
+}
+
+/* index.html에 사용했던 search 있으니까 굳이 하나 더 만들지 말고 있던거 사용하기 */
+/* mocile.css에서 쓰던 search 가져와서 서브페이지에 있는 search로 효과 바꿔주기 */
+header .search {
+    display: block;
+}
+header .navigation {
+    position: relative;
+}
+header .navigation .search {
+    position: absolute;
+    right: 0; top: 0;
+}
+header .navigation input {
+   background-position: 1.24rem center;
+   text-indent: 2.8915rem;
+}
+header .navigation input.active {
+    /* 활성화가 되어도 search아이콘이 사라지지않으니까 이미지 넣어놓기 */
+    background-image: url(../images/icon_search.png);
+}
+header .navigation input::placeholder {
+    text-align: left;
+    /* 글씨 들여쓰기(아이콘 들어갈 자리만큼 띄어줌) */
+    text-indent: 2.8915rem;
+}
+
+
+/* main */
+main {
+    width: 64.45rem;
+    margin: 0 auto;
+    padding: 7.25rem 0 0;
+}
+.detail_info {
+    position: relative;
+    padding: 0 5.9rem 0 16.55rem;
+    height: 18.75rem;
+    margin: 0 0 1.65rem;
+}
+.detail_info h2 {
+    font-size: 2rem;
+    color: #303336;
+    line-height: 2.55rem;
+    padding: 2.05rem 0 0.9rem;
+}
+.detail_info p {
+    /* 반응형 했을 때 자동으로 줄 바꿈되게하려면 width를 주는것보다 양쪽으로 padding을 주는 게 더 용이함 */
+    /* .detail_info에 padding-right 주기! */
+    /* padding-right: 5.9rem; */
+    font-size: .65rem;
+    color: #7B8591;
+    line-height: 1.1rem;
+}
+.detail_info .thumb {
+    position: absolute;
+    left: 0; top: 0;
+}
+.detail_info .thumb .thumbnail {
+    width: 14.65rem;
+    height: 18.75rem;
+    /* border-radius: 2rem; */
+}
+.detail_info .thumb .mark {
+    position: absolute;
+    right: 1.6rem; top: 0;
+    width: 0.5035rem;
+}
+.detail_info .more {
+    position: absolute;
+    right: 0; top: 0;
+    background: url(../images/icon_plus.png) no-repeat right 0.85rem bottom 1rem / 1.15rem auto #4621AD;
+    width: 3.6rem; height: 3.6rem;
+    border-radius: 0 0 0 3.6rem;
+}
+.detail_info .list {
+    position: absolute;
+    bottom: 0;
+}
+.detail_info .list li {
+    float: left;
+    padding-right: 0.7785rem;
+}
+.detail_info .list li img {
+    width: 4.3rem;
+    height: 4.5rem;
+    border-radius: .5rem;
+}
+
+.news_list ul{
+    display: flex;
+    margin-bottom: 6.2825rem;
+}
+.news_list li {
+    box-shadow: 0 .15rem .3rem #00000029;
+    position: relative;
+    border-radius: .5rem;
+}
+.news_list li ~ li {
+    margin-left: 1.6915rem;
+}
+.news_list li .info {
+    display: block;
+    width: 11.5rem;
+}
+.news_list li .info img {
+    width: 100%;
+    height: 7.5rem;
+    border-radius: .5rem .5rem 0 0;
+}
+.news_list li .info figcaption {
+    height: 4.0625rem;
+    background: url(../images/btn_more.png)no-repeat right .9565rem center / 1.15rem auto #fff;
+    border-radius: 0 0 .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 .943rem;
+}
+.news_list li .info figcaption strong {
+    font-size: .45rem;
+    color: #303336;
+}
+.news_list li .info figcaption span {
+    font-size: .35rem;
+    color: #7B8591;
+}
+.news_list li .profile {
+    position: absolute;
+    right: .8rem; top: .8rem;
+}
+.news_list li .profile img {
+    width: 1.8335rem; height: 1.8335rem;
+    border-radius: 100%;
+}
+
+
+
+/* sub2(audio)page */
+.play_list {
+    float: left;
+    width: 31rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px .15rem .3rem #00000029;
+    border: 1px solid #EFEFEF;
+    border-radius: .5rem;
+    height: 30.5rem;
+}
+.play_list .album {
+    padding: 1.2rem 1.1rem 0;
+    font-size: 0;
+}
+.play_list .album > img {
+    border-radius: .8rem;
+    width: 9.45rem;
+    vertical-align: middle;
+}
+.play_list .album > div {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 1.85rem;
+}
+.play_list .album h2 {
+    font-size: 1.15rem;
+    color: #3B3D40;
+    padding: 0 0 .95rem;
+    line-height: 1.2rem;
+}
+.play_list .album h2 span {
+    display: block;
+    font-size: .75rem;
+    font-weight: normal;
+}
+.play_list .album h2 em {
+    display: block;
+    font-size: .65rem
+    ;
+}
+.play_list .album .btns button + button {
+    /* button인접형제에게만 */
+    margin-left: .975rem;
+}
+.btn_type3 {
+    border: .05rem solid #E1E1E1;
+    border-radius: .2rem;
+    padding: 0 .6rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background-color: #fff;
+    font-size: .5rem;
+}
+.btn_type3::before {
+    content: "";
+    display: inline-block;
+    margin-right: .65rem;
+    vertical-align: middle;
+}
+.btn_type3.ico1::before{
+    background: url(../images/icon_add.png) no-repeat 0 0 /cover;
+    width: 0.4rem; height: 0.4rem;
+}
+.btn_type3.ico2::before{
+    background: url(../images/icon_download2.png) no-repeat 0 0 /cover;
+    width: 0.465rem; height: 0.6rem;
+}
+
+.play_list .mo_btn {
+    display: none;
+}
+
+.play_list .list ul {
+    padding: .4rem 0 0;
+    height: 17.5rem;
+    overflow: auto;
+}
+.play_list .list ul::-webkit-scrollbar {
+    width: 0.4rem;
+}
+.play_list .list ul::-webkit-scrollbar-thumb {
+    background-color: #999999;
+    border-radius: .4rem;
+}
+.play_list .list li {
+    padding: 0 1.1rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.play_list .list li + li {
+    border-top: .05rem solid #EFEFEF;
+}
+.play_list .list li .play {
+    background-color: #fff;
+    color: #3B3D40;
+    font-size: .65rem;
+    line-height: 2.5rem;
+}
+.play_list .list li .play span {
+    display: none;
+}
+.play_list .list li .play::before {
+    content: "";
+    display: inline-block;
+    width: 1.1rem; height: 1.1rem;
+    border-radius: 100%;
+    border: .05rem solid #ddd;
+    background: url(../images/icon_play.png) no-repeat center / .3rem .3rem ;
+    margin-right: .65rem;
+    vertical-align: middle;
+}
+.play_list .list li .play.pause::before {
+    background-color: #838D8F;
+    background-image: url(../images/icon_pause.png);
+}
+.play_list .list li div {
+    width: 20%;
+}
+.play_list .list li .down {
+    width: 2.5rem; height: 2.5rem;
+    background: url(../images/icon_download2.png) no-repeat center / auto .6rem;
+}
+.play_list .list li span {
+    color: #6F6F6F;
+    font-size: .65rem;
+    display: inline-block;
+}
+.play_list .list li .more {
+    display: none;
+}
+
+
+.information {
+    float: right;
+    width: 31.15rem;
+    height: 30.5rem;
+}
+.information .positive {
+    box-shadow: 0px .15rem .3rem #00000029;
+    border-radius: .5rem;
+    margin-bottom: 1.9rem;
+}
+.information .visual {
+    position: relative;
+}
+.information .visual img {
+    width: 100%;
+}
+.information .visual span {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    border-radius: 1.4rem;
+    background-color: rgba(0,0,0,.32);
+    line-height: 1.7rem;
+    width: 10.65rem;
+    text-align: center;
+    font-size: .7rem;
+}
+.information .positive .info {
+    padding:1.85rem 1.3rem;
+    position: relative;
+}
+.information .positive .info h3 {
+    font-size: .65rem;
+    line-height: .8rem;
+    color: #303336;
+    padding: 0 0 .3195rem;
+}
+.information .positive .info h3.h3-2 {
+    padding: .43rem 0 .3195rem;
+}
+.information .positive .info p {
+    font-size: .6rem;
+    line-height: .8rem;
+    color: #7B8591;
+}
+.information .positive .info button {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 1.85rem;
+}
+.information .news_list li ~ li {
+    margin-left: 1.4775rem;
+}
+.information .news_list li .info {
+    width: 9.4145rem; 
+}
+.information .news_list li .info img {
+    height: 6.4645rem;
+}
+.information .news_list li .profile img {
+    display: none;
+}
+.information .news_list li .info figcaption {
+    height: 3.5rem;
+    background-image: none;
+    position: relative;
+}
+.information .news_list li .info figcaption::after {
+    content: "";
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 100%;
+    border: .05rem solid #ddd;
+    background: url(../images/icon_play.png) no-repeat center / .3rem .3rem;
+    position: absolute;
+    right: .943rem;
+}
+
+
+
+.player {
+    background-color: #4621AD;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    height: 3.25rem;
+    color: #fff;
+    padding: 0 7.4rem;
+}
+.player .player_info {
+    display: flex;
+    width: 64.45rem;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+}
+.player .player_info .icon_before, .icon_next {
+    width: 1.2rem; height: 1.2rem;
+}
+.player .player_info .icon_player {
+    width: 2rem; height: 2rem;
+    margin: 0 .7rem;
+}
+.player .player_info .song {
+    margin: 0 1.2rem 0 .7rem;
+    padding: 0 0 1rem;
+}
+.player .player_info .song p {
+    font-size: .55rem;
+    line-height: .7rem;
+}
+.player .player_info .song .bar {
+    width: 49.2rem;
+    height: 0.35rem;
+    border-radius: .175rem;
+    background-color: #fff;
+    position: relative;
+    margin-top: .3rem;
+}
+.player .player_info .song .bar::after {
+    content: "";
+    display: block;
+    width: 15rem; height: 100%;
+    background-color: #FFEE00;
+    border-radius: .175rem;
+    position: absolute;
+}
+.player .player_info .time {
+    font-size: .65rem;
+    line-height: 1rem;
+    margin-right: 1.149rem;
+}
+.player .player_info .icon_sound {
+    width: 0.952rem; height: auto;
+    margin-right: 1.2rem;
+}
+.player .player_info .icon_download {
+    width: 0.75rem; height: auto;
+    margin-right: 1.2rem;
+}
+.player .player_info .icon_share {
+    width: 0.849rem; height: auto;
+}
+
+.player .mo_player_info {
+    display: none;
+}

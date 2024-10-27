@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 서브페이지(articles)</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" media="( min-width:0px ) and ( max-width:1199px )" href="css/style_mobile.css">
+    <link rel="stylesheet" media="( min-width:0px ) and ( max-width:1199px )" href="css/mobile.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/default.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><span class="hide">LOGOHERE</span></h1>
+        <button class="btn_menu"><span class="hide">메뉴</span></button>
+        <div class="navigation">
+            <div class="search">
+                <input type="search" placeholder="Search">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ARTICLES</a></li>
+                    <li><a href="sub2.html">AUDIO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="btn_alarm on"><span class="hide">알람</span></button>
+    </header>
+    <main>
+        <section>
+            <article class="detail_info">
+                <h2>Check<br>recommended articles</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    took a galley of type and scrambled it to make a type specimen book.</p>
+                <div>
+                    <div class="thumb">
+                        <img src="images/@thumbnail1.png" alt="thumbnail1" class="thumbnail">
+                        <img src="images/icon_mark.png" alt="icon_mark" class="mark">
+                    </div>
+                    <ul class="list clear">
+                        <li><button><img src="images/@thumbnail2.png" alt="thumbnail2"></button></li>
+                        <li><button><img src="images/@thumbnail3.png" alt="thumbnail3"></button></li>
+                        <li><button><img src="images/@thumbnail1.png" alt="thumbnail1"></button></li>
+                    </ul>
+                </div>
+                <a href="#" class="more"><span class="hide">more</span></a>
+            </article>
+            <article class="news_list">
+                <h2 class="hide">news list</h2>
+                <ul>
+                    <li>
+                        <a href="#" class="info">
+                            <figure>
+                                <img src="images/@thumbnail5.png" alt="thumbnail5">
+                                <figcaption>
+                                    <strong>PICK ME UP</strong>
+                                    <span>Got the weather blues?</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#" class="profile"><img src="images/@thumbnail_man2.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" class="info">
+                            <figure>
+                                <img src="images/@thumbnail6.png" alt="thumbnail6">
+                                <figcaption>
+                                    <strong>FEELING FRAGILE</strong>
+                                    <span>Need a little extra love?</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#" class="profile"><img src="images/@thumbnail_man1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" class="info">
+                            <figure>
+                                <img src="images/@thumbnail7.png" alt="thumbnail7">
+                                <figcaption>
+                                    <strong>DEAR DIARY</strong>
+                                    <span>A modern twist on journaling.</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#" class="profile"><img src="images/@thumbnail_man1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" class="info">
+                            <figure>
+                                <img src="images/@thumbnail8.png" alt="thumbnail8">
+                                <figcaption>
+                                    <strong>SEMINAR</strong>
+                                    <span>Neurogenesis. What is it & why care</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#" class="profile"><img src="images/@thumbnail_man2.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" class="info">
+                            <figure>
+                                <img src="images/@thumbnail9.png" alt="thumbnail9">
+                                <figcaption>
+                                    <strong>SEMINAR</strong>
+                                    <span>Neurogenesis. What is it & why care</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#" class="profile"><img src="images/@thumbnail_man2.png" alt=""></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

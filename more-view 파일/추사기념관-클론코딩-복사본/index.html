@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>추사기념관</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="top_layout">
+        <div class="top_wrap">
+          <div class="inner">
+            <div class="logo_wrap">
+              <a href="#" class="sublogo">예산군</a>
+              <a href="#" class="mainlogo">추사기념관</a>
+            </div>
+            <ul class="header_right">
+              <li class="home"><a href="#">HOME</a></li>
+              <li class="yesan"><a href="#">예산군청</a></li>
+              <li class="sitemap">
+                <a href="#"
+                  >sitemap
+                  <span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="gnb_layout">
+          <div class="gnb_wrap">
+            <ul class="depth1">
+              <li class="gnb1">
+                <a href="#"><span>추사김정희</span></a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#"><span>연보</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>가계도</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb2">
+                <a href="#"><span>추사고택</span></a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#"><span>시설현황</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>관람안내</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>문화재현황</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>사이버투어</span></a>
+                  </li>
+                  <li class="dep3_show">
+                    <a href="#">
+                      <span>해설예약신청</span>
+                    </a>
+                    <ul class="depth3">
+                      <li><a href="#">조회하기</a></li>
+                      <li><a href="#">예약하기</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb3">
+                <a href="#"><span>추사기념관</span></a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#"><span>시설현황</span></a>
+                  </li>
+                  <li class="dep3_show">
+                    <a href="#">
+                      <span>전시</span>
+                    </a>
+                    <ul class="depth3">
+                      <li><a href="#">상설전시</a></li>
+                      <li><a href="#">특별전시</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep3_show">
+                    <a href="#">
+                      <span>소장품</span>
+                    </a>
+                    <ul class="depth3">
+                      <li><a href="#">소장품 소개</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep3_show">
+                    <a href="#">
+                      <span>유물기증</span>
+                    </a>
+                    <ul class="depth3">
+                      <li><a href="#">기증안내</a></li>
+                      <li><a href="#">기증자 소개</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"><span>관광 상품</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>관람안내</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb4">
+                <a href="#"><span>추사체험관</span></a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#"><span>시설현황</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>체험프로그램 신청</span></a>
+                  </li>
+                  <li>
+                    <a href="#" class="check"><span>체험프로그램 신청확인</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>체험안내</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb5">
+                <a href="#"><span>커뮤니티</span></a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#">
+                      <span>공지사항</span>
+                    </a>
+                    
+                  </li>
+                  <li class="dep3_show">
+                    <a href="#"><span>문의하기</span></a>
+                    <ul class="depth3">
+                      <li><a href="#">요청사항</a></li>
+                      <li><a href="#">분실물</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"><span>보도자료</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>관람후기</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>설문조사</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>갤러리</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>양식다운로드</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb6">
+                <a href="#"><span>기념관 소개</span></a>
+                <ul class="depth2">
+                  <li>
+                    <a href="#"><span>인사말</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>연혁</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>조직 및 업무</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>관광안내도</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>찾아오시는길</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span>주변 관광지</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="gnb_bg">
+              <div class="gnb_title">
+                <div class="gnb_txt">
+                  <div class="title_img"></div>
+                  <ul>
+                    <li class="title-1">
+                      <span>관람시간</span>
+                      <span class="title-1-1">3월~10월. 09:00~18:00</span>
+                      <span class="title-1-2">11월~2월. 09:00~17:00</span>
+                    </li>
+                    <li class="title-2">
+                      <span>관람요금</span>
+                      <span class="title-2-1">무료</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="line">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main id="body_layout">
+        <div class="main_visual">
+          <div class="text_visual">
+            <div class="title_text">
+              <div class="main_title">
+                <img src="images/title-first-text.png" alt="title-first-text" />
+              </div>
+              <div class="sub_title">
+                <img
+                  src="images/title-second-text.png"
+                  alt="title-second-text"
+                />
+              </div>
+              <div class="right_title">
+                <p class="right">
+                  <span>추사 김정희의 지혜와 고고함이 배어있는</span>
+                </p>
+              </div>
+            </div>
+            <div class="control">
+              <div class="next-prev-button">
+                <div class="swiper-button-prev-main"></div>
+                <div class="swiper-button-next-main"></div>
+              </div>
+              <div class="total">
+                <div class="swiper-progress-bar">
+                  <div class="slide_progress-bar"></div>
+                </div>
+                <div class="swiper-pagination-main"></div>
+                <button class="stop"></button>
+                <!-- <button class="play"></button> -->
+              </div>
+            </div>
+          </div>
+          <div class="slide_visual">
+            <div class="swiper mainSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <img
+                      src="images/main-visual-slide-추사기념관.png"
+                      alt="추사기념관"
+                    />
+                    <span class="slide-text">
+                      지금여기는? <em>추사기념관 입니다.</em>
+                    </span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <img
+                      src="images/main-visual-slide-추사고택.png"
+                      alt="추사고택"
+                    />
+                    <span class="slide-text">
+                      지금여기는? <em>추사고택 입니다.</em>
+                    </span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <img
+                      src="images/main-visual-slide-화순옹주홍문.png"
+                      alt="화순옹주홍문"
+                    />
+                    <span class="slide-text">
+                      지금여기는? <em>화순옹주홍문 입니다.</em>
+                    </span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <img src="images/main-visual-slide-백송.png" alt="백송" />
+                    <span class="slide-text">
+                      지금여기는? <em>백송 입니다.</em>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section section1">
+          <div class="inner">
+            <div class="notice_wrap">
+              <div class="notice-menu">
+                <div class="notice-item">
+                  <a href="#inner01">
+                    <span id="inner01">공지사항</span>
+                  </a>
+                </div>
+                <div class="notice-item">
+                  <a href="#inner02">
+                    <span id="inner02">보도자료</span>
+                  </a>
+                </div>
+              </div>
+              <div id="inner01" class="notice-inner inner1">
+                <ul class="notice_list">
+                  <li>
+                    <a href="#inner01">
+                      <div class="date">
+                        <span>20</span>
+                        <em>2023-09</em>
+                      </div>
+                      <div class="text">
+                        <strong
+                          >추사고택 문화관광해설사 추석명절휴무알림</strong
+                        >
+                        <em
+                          >추석 명절을 맞이하여 추사고택 문화관광해설사의
+                          휴무사항을 아래와 같이 알려드립니다.ㅇ기간 : 2023. 9.
+                          28.(목) ~ 9. 29.(금)ㅇ사유 : 문화관광해설사 추석명절
+                          휴무ㅇ대상장소 : 추사고택​</em
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span
+                        >추사고택 일원 옛 사진 및 자료 공모전 수상자 발표
+                        알림</span
+                      >
+                      <em>2023.08.01</em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span
+                        >예산군 문화관광해설사 보수교육 참석에 따른 추사고택
+                        해설 임시휴무 안내</span
+                      >
+                      <em>2023.07.24</em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>추사 김정희 선생 탄신 237주년 기념 다례제</span>
+                      <em>2023.07.19</em>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div id="inner02" class="notice-inner inner2">
+                <ul class="notice_list">
+                  <li>
+                    <a href="#inner02">
+                      <div class="date">
+                        <span>19</span>
+                        <em>2023-07</em>
+                      </div>
+                      <div class="text">
+                        <strong
+                          >예산군 추사고택, 묵향 가득한 '김정희 삶'을
+                          들여다보다! (전통 재료와 기법으로 추사 김정희 생활상
+                          복원)</strong
+                        >
+                        <em
+                          >예산군 추사고택은 추사 김정희 및 조선 후기 왕가의
+                          생활상을 재현하기 위해 3개월간 한지 도배 및 콩댐 장판
+                          시공, 사랑채 전통 가구 제작 후 재배치를 완료했다고
+                          밝혔다.추사고택은 지난 1977년 ‘추사고택 정화사업’ 이후
+                          관리의 효율성을 위해 양지 도배와 폴리염화비닐(PVC)
+                          장판으로 이뤄져 있었으나 이번 사업을 계기로 전주에서
+                          제작되는 전통 한지를 이용해 도배를 했으며, 콩댐 장판을
+                          이용해 바닥을 마무리했다.아울러 정비된 공간에
+                          사료(史料) 및 당대 유물의 제원 및 형태를 기반으로
+                          목가구를 별도 제작했으며, 기존에 있던 전통 가구 역시
+                          신·구 가구들이 조화롭게 어우러질 수 있도록 취색(取色)
+                          및 수리를 진행했다는 설명이다.또한 공간의 생동감을
+                          주고 관람객에게 볼거리 제공을 위해 사랑채 내부에는
+                          보료, 유제 촛대, 고비 등 총 25종의 소품을 추가
+                          배치했으며, 일반 고택이 아닌 추사 김정희 선생의 고택인
+                          만큼 붓, 먹, 종이, 벼루 등 서예를 떠올릴 수 있는
+                          문방사우(文房四友)를 전면 배치해 묵향이 머무는
+                          추사고택을 표현했다.추사고택은 이번 복원작업 중
+                          조선시대 벽지, 목가구, 공예, 한옥 등 각계 전문가의
+                          의견 및 고증을 통해 조선 후기 양반 및 왕가의 삶을
+                          재현하고자 했으며, 사랑채 내부에 다도(茶道) 관련
+                          소품을 배치해 차(茶)를 사랑했던 추사 김정희의 삶도
+                          재조명했다.추사고택 관계자는 “추사고택 내실 전통화를
+                          통해 추사고택의 가치와 역사성을 재조명하는 계기가 될
+                          것으로 기대한다”며 “추후 안채 내부 역시 복원사업을
+                          꾸준히 추진해 추사고택을 찾는 방문객에게 훌륭한
+                          문화유산이 주는 품격을 고취시키고 추사고택이
+                          명실상부한 우리나라 대표 고택으로 거듭날 수 있도록
+                          최선을 다하겠다”고 밝혔다.사진설명 : 추사고택 내실
+                          전통화 후 사랑채 모습, 추사고택 가구 및 소품 배치
+                          전문가 자문 모습(용인대학교 명예교수 박영규)​</em
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span
+                        >예산군 관광시설사업소, 추사고택 조경수 전정 공사
+                        완료</span
+                      >
+                      <em>2023.03.28</em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>예산군, 추사기념관 유물 구입 공고</span>
+                      <em>2023.02.15</em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span
+                        >예산군 관광시설사업소, 가을 국화로 새단장한 추사고택
+                        놀러오세요!</span
+                      >
+                      <em>2022.11.04</em>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="more">더보기</a>
+            </div>
+            <div class="info_wrap">
+              <h1>관람안내</h1>
+              <a href="#">041-339-8242</a>
+              <div class="info">
+                <strong>관람시간</strong>
+                <div class="info-content">
+                  <em>3~10월 : 09:00~18:00</em>
+                  <em>11~2월 : 09:00~17:00</em>
+                  <span>( * 연중무휴)</span>
+                </div>
+              </div>
+              <div class="info info2">
+                <strong>관람료</strong>
+                <div class="info-content">
+                  <em class="free">무료</em>
+                </div>
+              </div>
+            </div>
+            <div class="popupzone"></div>
+            <div class="quick_wrap">
+              <ul class="list">
+                <li>
+                  <a href="#">
+                    <div class="icon icon1"></div>
+                    <span>소장품 소개</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon icon2"></div>
+                    <span>기증자 소개</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon icon3"></div>
+                    <span>관람후기</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon icon4"></div>
+                    <span>문의하기</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon icon5"></div>
+                    <span>관광상품</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon icon6"></div>
+                    <span>관광안내도</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon icon7"></div>
+                    <span>찾아오시는길</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section section2">
+          <div class="section2-text">
+            <strong>추사의 <em class="solmoe">이야기</em>를 만나다</strong>
+            <span>추사 김정희 선생의 삶과 학문, 예술의 세계를 만나보세요.</span>
+          </div>
+          <ul class="section2-list">
+            <li class="list-01">
+              <a href="#">
+                <div class="list_bg"></div>
+                <span>추사 김정희</span>
+                <div class="plus-icon"></div>
+                <div class="on_box">
+                  <strong>추사 김정희</strong>
+                  <span
+                    >추사 김정희 선생의 출생과 생애 주요 업적을
+                    소개합니다.</span
+                  >
+                  <em>자세히 보기</em>
+                </div>
+              </a>
+            </li>
+            <li class="list-02">
+              <a href="#">
+                <div class="list_bg"></div>
+                <span>전시안내</span>
+                <div class="plus-icon"></div>
+                <div class="on_box">
+                  <strong>전시안내</strong>
+                  <span
+                    >추사의 생애를 공간별로 구분하여, 각 시기별 주요 사건을
+                    해설하고 작품을 <br />전시공간입니다.</span
+                  >
+                  <em>자세히 보기</em>
+                </div>
+              </a>
+            </li>
+            <li class="list-03">
+              <a href="#">
+                <div class="list_bg"></div>
+                <span>사이버투어</span>
+                <div class="plus-icon"></div>
+                <div class="on_box">
+                  <strong>사이버투어</strong>
+                  <span
+                    >추사기념관을 방문 없이 온라인에서 먼저 <br />만나볼 수
+                    있습니다.</span
+                  >
+                  <em>자세히 보기</em>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="section section3">
+          <div class="inner">
+            <div class="section3-text">
+              <strong>배움의 <em class="solmoe">꽃</em>을 피우다</strong>
+              <span
+                >추사체험관에서 김정희 선생의 정신을 다양한 체험 프로그램을 통해
+                배워보아요.</span
+              >
+            </div>
+            <div class="section3-slide">
+              <div class="swiper sec3-Swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img
+                            src="images/section3-slide-image02.do"
+                            alt="section3-slide-image02"
+                          />
+                          <span class="square">
+                            <em>접수중</em>
+                          </span>
+                        </div>
+                        <strong>난초 그리기</strong>
+                        <span>난초그리기 신청자 모집</span>
+                        <em>1,000</em>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img
+                            src="images/section3-slide-image03.do"
+                            alt="section3-slide-image03"
+                          />
+                          <span class="square">
+                            <em>접수중</em>
+                          </span>
+                        </div>
+                        <strong>세한도그리기</strong>
+                        <span>세한도그리기 신청자 모집</span>
+                        <em>1,000</em>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img
+                            src="images/section3-slide-image04.do"
+                            alt="section3-slide-image04"
+                          />
+                          <span class="square">
+                            <em>접수중</em>
+                          </span>
+                        </div>
+                        <strong>종이접기</strong>
+                        <span>종이접기 신청자 모집</span>
+                        <em>1,000</em>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img
+                            src="images/section3-slide-image05.do"
+                            alt="section3-slide-image05"
+                          />
+                          <span class="square">
+                            <em>접수중</em>
+                          </span>
+                        </div>
+                        <strong>탁본체험</strong>
+                        <span>탁본체험 신청자 모집</span>
+                        <em>2,000</em>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img
+                            src="images/section3-slide-image06.do"
+                            alt="section3-slide-image06"
+                          />
+                          <span class="square">
+                            <em>접수중</em>
+                          </span>
+                        </div>
+                        <strong>나비부채꾸미기</strong>
+                        <span>나비부채꾸미기 신청자 모집</span>
+                        <em>4,000</em>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img
+                            src="images/section3-slide-image07.do"
+                            alt="section3-slide-image07"
+                          />
+                          <span class="square">
+                            <em>접수중</em>
+                          </span>
+                        </div>
+                        <strong>원형부채꾸미기</strong>
+                        <span>원형부채꾸미기 신청자 모집</span>
+                        <em>5,000</em>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img
+                            src="images/section3-slide-image08.do"
+                            alt="section3-slide-image08"
+                          />
+                          <span class="square">
+                            <em>접수중</em>
+                          </span>
+                        </div>
+                        <strong>세한도색칠하기</strong>
+                        <span>세한도색칠하기 신청자 모집</span>
+                        <em>5,000</em>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <a href="#">
+                        <div class="thumbnail">
+                          <img
+                            src="images/section3-slide-image01.do"
+                            alt="section3-slide-image01"
+                          />
+                          <span class="square">
+                            <em>접수중</em>
+                          </span>
+                        </div>
+                        <strong>추사체 써보기</strong>
+                        <span>추사체 써보기 신청자 모집</span>
+                        <em>1,000</em>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next-3"></div>
+            <div class="swiper-button-prev-3"></div>
+            <a href="#" class="more">더보기</a>
+          </div>
+        </div>
+      </main>
+      <footer id="foot_layout">
+        <div class="inner">
+          <div class="foot_top">
+            <ul>
+              <li><a href="#" class="yellow">개인정보처리방침</a></li>
+              <li><a href="#">CCTV운영관리방침</a></li>
+              <li><a href="#">찾아오시는길</a></li>
+              <li><a href="#">사이트맵</a></li>
+            </ul>
+          </div>
+          <div class="foot_bottom">
+            <div class="foot_text">
+              <div class="address">[32417] 충남 예산군 신암면 추사고택로 249 <em>.Tel 041-339-8248</em></div>
+              <p class="copyright">COPYRIGHT&copy; YESAN COUNTY. ALL RIGHTS RESERVED.</p>
+            </div>
+          </div>
+          <div class="foot_site">
+            <span class="site">관련 사이트</span>
+            <ul class="siteList">
+              <li class="first"><a href="#">예산군 윤봉길의사기념관</a></li>
+              <li class="second"><a href="#">과천추사박물관</a></li>
+              <li class="third"><a href="#">제주 추사관</a></li>
+              <li class="forth"><a href="#">문화재청</a></li>
+            </ul>
+          </div>
+          <div class="gotop">
+            <div class="top"></div>
+            <a href="#">TOP</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

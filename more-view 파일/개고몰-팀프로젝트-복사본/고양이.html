@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gegomall</title>
+    <link rel="icon" href="images/파비콘1.png">
+    <!-- 폰트어썸 -->
+    <script
+      src="https://kit.fontawesome.com/489e60e2cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- bx-slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- animate-aos JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="css/cat.css" />
+    <script src="js/cat.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="inner">
+          <div class="logo">
+            <a href="#" onclick="location.href='index1.html'">
+              <img
+                src="images/GegoMall_LOGO.png"
+                alt="개고몰로고"
+                height="50px"
+              />
+            </a>
+          </div>
+          <div class="btn">
+            <input type="checkbox" id="toggle" hidden />
+            <!-- <span class="bg1"></span> -->
+            <!-- <span class="bg2"></span> -->
+            <label for="toggle" class="toggleSwitch">
+              <span class="toggleButton">
+                <!-- <span class="bg3"></span>
+                  <span class="bg4">강아지</span> -->
+              </span>
+            </label>
+          </div>
+          <nav class="nav">
+            <ul class="depth1">
+              <li>
+                <a href="#">FASHION</a>
+                <ul class="depth2">
+                  <li><a href="#">꼬까옷</a></li>
+                  <li><a href="#">이름표</a></li>
+                  <li><a href="#">선글라스</a></li>
+                  <li><a href="#">머리띠/머리핀</a></li>
+                  <li><a href="#">모자</a></li>
+                  <li><a href="#">스카프</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">LIFE</a>
+                <ul class="depth2">
+                  <li><a href="#">샴푸/린스/컨디셔너</a></li>
+                  <li><a href="#">미용/목욕용품</a></li>
+                  <li><a href="#">장난감/훈련용품</a></li>
+                  <li><a href="#">이동장/울타리</a></li>
+                  <li><a href="#">산책용품</a></li>
+                  <li><a href="#">위생용품</a></li>
+                  <li><a href="#">쿠션/하우스</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">HEALTH</a>
+                <ul class="depth2">
+                  <li><a href="#">영양간식</a></li>
+                  <li><a href="#">영양제</a></li>
+                  <li><a href="#">영양사료</a></li>
+                  <li><a href="#">의약부외품</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">FOOD</a>
+                <ul class="depth2">
+                  <li><a href="#">테스트용 사료샘플</a></li>
+                  <li><a href="#">건조 간식</a></li>
+                  <li><a href="#">스틱</a></li>
+                  <li><a href="#">습식캔</a></li>
+                  <li><a href="#">스낵</a></li>
+                  <li><a href="#">캣닢/캣그라스</a></li>
+                  <li><a href="#">분유/이유식</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="icon">
+            <div class="icon-img">
+              <a href="#"
+                ><img
+                  src="images/search_icon.png"
+                  alt="돋보기"
+                  width="20px"
+                  height="20px"
+              /></a>
+            </div>
+            <div class="icon-img">
+              <a href="#"
+                ><img
+                  src="images/user_icon.png"
+                  alt="user"
+                  width="20px"
+                  height="20px"
+              /></a>
+            </div>
+            <div class="icon-img">
+              <a href="#"
+                ><img
+                  src="images/cart_icon.png"
+                  alt="cart"
+                  width="20px"
+                  height="20px"
+              /></a>
+            </div>
+            <div class="ham">
+              <a href="#"
+                ><img
+                  src="images/hamburger.png"
+                  alt="menu-btn"
+                  width="20px"
+                  height="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="top-btn">
+          <a href="#" class="top">
+            <img
+              src="images/main top.png"
+              alt="top-btn"
+              width="50px"
+              height="50px"
+            />
+          </a>
+        </div>
+        <!--  임의로 넣은거에요  -->
+        <div class="mainbanner cat">
+          <!-- bx-slider -->
+          <div class="inner">
+            <div class="slider">
+              <div>
+                <img src="images/mainbanner-cat1.png" alt="mainbanner-cat1" />
+              </div>
+              <div>
+                <img src="images/mainbanner-cat2.png" alt="mainbanner-cat2" />
+              </div>
+              <div>
+                <img src="images/mainbanner-cat3.png" alt="mainbanner-cat3" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bestitem cat">
+          <p>이번 주 인기 아이템</p>
+          <div class="inner">
+            <div class="box1">
+              <div class="box01">
+                <div class="box02">
+                  <span>01</span
+                  ><img src="images/그린 동그라미.png" alt="동그라미" />
+                </div>
+              </div>
+              <p class="blod blod1">닥터할리 펫 유산균</p>
+              <p>180ml 강아지 고양이용</p>
+              <img
+                src="images/best_img1.png"
+                alt="best-img1"
+                class="item-img margin1"
+              />
+              <div class="shop-now box11">
+                <p>SHOP NOW<img src="images/best_arrow.png" alt="arrow" /></p>
+              </div>
+            </div>
+            <div class="box1 box11">
+              <div class="box01">
+                <div class="box02">
+                  <span>02</span
+                  ><img src="images/그린 동그라미.png" alt="동그라미" />
+                </div>
+              </div>
+              <p class="blod">ONG 오엠지 SKU 우노 스크래처</p>
+              <p class="woo1">사이살 로프 재질 스크래처와 해먹</p>
+              <img
+                src="images/best_img2-cat.png"
+                alt="best-img1"
+                class="item-img omg"
+              />
+              <div class="shop-now box11 woo2">
+                <p>SHOP NOW</p>
+                <img src="images/best_arrow.png" alt="arrow" />
+              </div>
+            </div>
+            <div class="box1">
+              <div class="box01">
+                <div class="box02">
+                  <span>03</span
+                  ><img src="images/그린 동그라미.png" alt="동그라미" />
+                </div>
+              </div>
+              <p class="blod">페로가토 아보카도 캣닢사탕</p>
+              <p>신선한 천연 민트 원료로 만든 사탕</p>
+              <img
+                src="images/best_img3-cat.png"
+                width="440px"
+                height="440px"
+                alt="best-img1"
+                class="item-img abo margin"
+              />
+              <div class="shop-now box11">
+                <p>SHOP NOW<img src="images/best_arrow.png" alt="arrow" /></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product cat" data-aos="fade-up" data-aos-duration="1000">
+          <div class="inner">
+            <p>PRODUCT</p>
+            <p class="more">more +</p>
+            <div class="pr-up">
+              <div class="img1">
+                <div class="discount">
+                  <img
+                    src="images/20퍼센트 할인.png"
+                    alt="discount"
+                    width="80px"
+                    height="80px"
+                  />
+                </div>
+                <div class="hoverbox">
+                  <img src="images/product1.jpg" alt="img1" class="hovering" />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">4in1 PET PERFUME SPRAY</a></p>
+                <span><a href="#">27,900원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    src="images/product2-cat.png"
+                    alt="img2"
+                    class="hovering"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">고양이 오리 악어 인형</a></p>
+                <span><a href="#">64,000원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    src="images/product3-cat.png"
+                    alt="img3"
+                    class="hovering"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">촉촉트릿 fot cat 북어 45g</a></p>
+                <span><a href="#">14,000원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    src="images/product4-cat.png"
+                    alt="img4"
+                    class="hovering"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">애니홀릭 엘라이신 스틱</a></p>
+                <span><a href="#">4,500원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    src="images/product5-cat.png"
+                    alt="img8"
+                    class="hovering"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">esc 반려동물 쇼파 & 쿠션</a></p>
+                <span><a href="#">135,000원</a></span>
+              </div>
+            </div>
+            <div class="pr-down">
+              <div class="img1">
+                <div class="discount">
+                  <img
+                    src="images/20퍼센트 할인.png"
+                    alt="discount"
+                    width="80px"
+                    height="80px"
+                  />
+                </div>
+                <div class="hoverbox">
+                  <img
+                    src="images/product6-cat.png"
+                    alt="img5"
+                    class="hovering"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">참 좋은 수제간식 양미리 100g</a></p>
+                <span><a href="#">8,500원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    src="images/product7-cat.png"
+                    alt="img6"
+                    class="hovering"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">강아지 우비 장화 1set</a></p>
+                <span><a href="#">34,700원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    src="images/product8-cat.png"
+                    alt="img7"
+                    class="hovering"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">까리냥 카사까리 고양이 모래</a></p>
+                <span><a href="#">48,000원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    class="img-border hovering"
+                    src="images/product9-cat.png"
+                    alt="img9"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">고로고로츄 츄르간식</a></p>
+                <span><a href="#">6,900원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    class="img-border hovering"
+                    src="images/product10-cat.png"
+                    alt="img10"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p><a href="#">베츠솔루션 시그니처캔 K</a></p>
+                <span><a href="#">7,500원</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide cat">
+          <div class="inner1">
+            <div class="img">
+              <img
+                src="images/slide-img1-cat.png"
+                alt="slide-img1"
+                width="500px"
+                height="500px"
+              />
+            </div>
+            <div class="slideinner">
+              <p>맛과 영양소가 풍부한 사료 모음! 🥣 🍖</p>
+              <div class="slider1">
+                <!-- Swiper -->
+                <ul class="slide_first">
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide1-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>FARMER’S TABLE<br />PORK 2kg</p>
+                    <span>42,000원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide2-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>ROYAL CANIN Abult<br />MINI 10kg</p>
+                    <span>99,700원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide3-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>AVO Derm NATURAL<br />치킨&현미 1kg</p>
+                    <span>25,500원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide4-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>ROYAL CANIN MEDUM<br />Adult 8kg</p>
+                    <span>75,900원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide5-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>AVO Derm NATURAL<br />치킨&현미 1kg</p>
+                    <span>25,500원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide6-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>ROYAL CANIN MEDUM<br />Adult 8kg</p>
+                    <span>75,900원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="inner2">
+            <div class="img">
+              <img
+                src="images/slide-img2-cat.png"
+                alt="slide-img1"
+                width="500px"
+                height="500px"
+              />
+            </div>
+            <div class="slideinner">
+              <p>고양이 필수 아이템들 모음! 🐈🐾</p>
+              <div class="slider2">
+                <!-- Swiper -->
+                <ul class="slide_first">
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide7-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>리드줄 결합<br />친환경 배변봉투 1set</p>
+                    <span>7,900원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide8-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>스티브 3단<br />강아지 산책 사료 물통</p>
+                    <span>15,700원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide9-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>내추럴 코어<br />친환경 프리스비</p>
+                    <span>13,200원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide10-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>리얼 독<br />앞섬방지 L형 하네스</p>
+                    <span>8,900원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide11-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>AVO Derm NATURAL<br />치킨&현미 1kg</p>
+                    <span>25,500원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <div class="shadow">
+                      <img
+                        src="images/slide12-cat.png"
+                        alt=""
+                        width="270px"
+                        height="270px"
+                      />
+                    </div>
+                    <p>ROYAL CANIN MEDUM<br />Adult 8kg</p>
+                    <span>75,900원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-t">
+          <div class="inner1">
+            <div class="img">
+              <img
+                src="images/slide-img1-cat.png"
+                alt="slide-img1"
+                width="500px"
+                height="500px"
+              />
+            </div>
+            <div class="slideinner">
+              <p>맛과 영양소가 풍부한 사료 모음! 🥣 🍖</p>
+              <div class="slider1">
+                <!-- Swiper -->
+                <ul class="slide_first tab">
+                  <li>
+                    <img
+                      src="images/slide1-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>FARMER’S TABLE<br />PORK 2kg</p>
+                    <span>42,000원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide2-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>ROYAL CANIN Abult<br />MINI 10kg</p>
+                    <span>99,700원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide3-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>AVO Derm NATURAL<br />치킨&현미 1kg</p>
+                    <span>25,500원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide4-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>ROYAL CANIN MEDUM<br />Adult 8kg</p>
+                    <span>75,900원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide5-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>퓨리나 캣챠우<br />컴플리트 6.8kg</p>
+                    <span>42,000원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide6-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>카니러브 캣<br />그레인프리 6kg</p>
+                    <span>66,000원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="inner2">
+            <div class="img">
+              <img
+                src="images/slide-img2-cat.png"
+                alt="slide-img1"
+                width="500px"
+                height="500px"
+              />
+            </div>
+            <div class="slideinner">
+              <p>고양이 필수 아이템들 모음! 🐈🐾</p>
+              <div class="slider2">
+                <!-- Swiper -->
+                <ul class="slide_first tab">
+                  <li>
+                    <img
+                      src="images/slide7-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>라이겟 단단한 나무<br />캣 타워 1set</p>
+                    <span>158,700원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide8-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>랏토핏 빙글빙글<br />깃털볼</p>
+                    <span>13,600원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide9-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>딩동댕 오뚜기<br />장난감</p>
+                    <span>9,700원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide10-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>CAT COLOSTRUM<br />PROTEIN 1set</p>
+                    <span>7,900원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide11-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>에어펫스 노블레스<br />후드형 화장실</p>
+                    <span>45,000원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="images/slide12-cat.png"
+                      alt=""
+                      width="270px"
+                      height="270px"
+                      class="t-shadow"
+                    />
+                    <p>두부랑캣츠 이코노미<br />오리지날(두부모래)</p>
+                    <span>35,000원</span>
+                    <img
+                      src="images/cart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="26px"
+                      class="icon1"
+                    />
+                    <img
+                      src="images//heart_icon.png"
+                      alt=""
+                      width="26px"
+                      height="22px"
+                      class="icon2"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="brand-week cat" data-aos="fade-up" data-aos-duration="800">
+          <div class="inner">
+            <p>BRAND WEEK</p>
+            <p class="more">more +</p>
+            <div class="img-box">
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    class="img-border hovering"
+                    src="images/brandweek1-cat.png"
+                    alt="img10"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p>
+                  <a href="#">[코쿤펫] <br />고양이 구내염 치료제 12ml</a>
+                </p>
+                <span><a href="#">29,000원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    class="img-border hovering"
+                    src="images/brandweek2-cat.png"
+                    alt="img2"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p>
+                  <a href="#"
+                    >[마이베 필랩] <br />신바이오스틱 반려동물 유산균</a
+                  >
+                </p>
+                <span><a href="#">38,000원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    class="img-border hovering"
+                    src="images/brandweek3-cat.png"
+                    alt="img3"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p>
+                  <a href="#">[TRM] <br />퓨리네이드 플러스 영양제</a>
+                </p>
+                <span><a href="#">69,000원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    class="img-border hovering"
+                    src="images/brandweek4-cat.png"
+                    alt="img4"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p>
+                  <a href="#">[디어도르]<br />esc 반려동물 쇼파 & 쿠션</a>
+                </p>
+                <span><a href="#">135,000원</a></span>
+              </div>
+              <div class="img1">
+                <div class="hoverbox">
+                  <img
+                    class="img-border hovering"
+                    src="images/brandweek5-cat.png"
+                    alt="img5"
+                  />
+                </div>
+                <img
+                  src="images/heart-drop shadow.png"
+                  alt="heart icon"
+                  class="product-icon"
+                />
+                <p>
+                  <a href="#">[쥬쥬베] <br />2단 고양이 막대 낚시대</a>
+                </p>
+                <span><a href="#">4,000원</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottombanner cat">
+          <p>BRAND</p>
+          <div class="inner">
+            <div class="left-anf">
+              <p>ROYAL<br />CANIN</p>
+              <img src="images/brand-anf-cat.png" alt="img1" />
+            </div>
+            <div class="k9">
+              <p>PURE<br />NATURE</p>
+              <img
+                src="images/brand-k9-cat.png"
+                alt="img2"
+                width="412px"
+                height="362px"
+              />
+            </div>
+            <div class="go">
+              <p>CATSRANG</p>
+              <img src="images/brand-go-cat.png" alt="img3" />
+            </div>
+            <div class="natural">
+              <p>PUREVITA</p>
+              <img src="images/brand-natural-cat.png" alt="img4" />
+            </div>
+            <div class="haruwell">
+              <p>HALO</p>
+              <img src="images/brand-haru-cat.png" alt="img5" />
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <p>Review</p>
+          <div class="inner">
+            <div class="best-review">
+              <img src="images/강아지 츄르_gif.gif" alt="dog"style="width: 505px; height: 417px; border-radius: 29px;" />
+            </div>
+            <div class="img1">
+              <img src="images/고양이 양치_gif.gif" alt="cat1" style="width: 290px; height: 247px; border-radius: 29px;"/>
+            </div>
+            <div class="img1-review">
+              <div class="box1">
+                <div class="box2"></div>
+                <p>만두의 집사 정소윤 님의 소중한 후기</p>
+              </div>
+              <div class="box3">
+                <p>
+                  만두가 잇몸이 약한 편인데<br />
+                  미세모로 되어있는 칫솔이라 잇몸에 피도<br />
+                  안나고 만두도 양치하는 걸 거부하지 않아서<br />
+                  너무 좋아요! 완전 강추합니다!!
+                </p>
+              </div>
+            </div>
+            <div class="img2">
+              <img src="images/고양이 츄르_gif1.gif" alt="cat2"style="width: 290px; height: 247px; border-radius: 29px;" />
+            </div>
+            <div class="img2-review">
+              <div class="box1">
+                <div class="box2"></div>
+                <p>쪼꼬의 집사 임예나 님의 소중한 후기</p>
+              </div>
+              <div class="box3">
+                <p>
+                  쪼꼬가 호불호가 강해서 사료도 간식도<br />
+                  자기가 먹고 싶은 것만 먹어요ㅠ0ㅠ<br />
+                  병원에서 말랐다고 해서 속상했는데<br />
+                  츄르는 아주 잘 먹어서 걱정 덜었어요!!!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="inner">
+            <div class="footer-logo">
+              <img src="images/footer_logo.png" alt="footer_logo" />
+            </div>
+            <div class="box1">대표 : 권미경</div>
+            <div class="box2">
+              사업자등록번호 : 122-25-38890 <b>사업자번호조회></b>
+            </div>
+            <div class="box3">통신판매업신고번호 : 제 2017-인천서구-0233호</div>
+            <div class="box4">메일 : gegomall@naver.com</div>
+            <div class="box5">호스팅제공 : 엔에이치엔고도(주)</div>
+            <div class="box6">
+              주소 : 인천광역시 서구 보석로11번길안길 14 1층 개고몰
+            </div>
+            <div class="inner-box7">
+              <div class="box1"><b>회사소개</b></div>
+              <div class="box2"><b>이용약관</b></div>
+              <div class="box3"><b>개인정보처리방침</b></div>
+              <div class="box4"><b>제휴/문의</b></div>
+            </div>
+            <div class="box8">COPTRIGHT (C) TEAM1 ALL Rights Reserves</div>
+          </div>
+          <div class="inner2">
+            <div class="footer-icon">
+              <div class="box1">
+                <img src="images/네이버 톡톡.png" alt="톡톡" />
+              </div>
+              <div class="box1">
+                <img src="images/카카오톡.png" alt="카카오톡" />
+              </div>
+              <div class="box1">
+                <img src="images/인스타그램.png" alt="인스타그램" />
+              </div>
+              <div class="box1">
+                <img src="images/블로그.png" alt="블로그" />
+              </div>
+            </div>
+            <div class="box9">고객지원센터</div>
+            <div class="box10">대표번호 : 070-7559-5719</div>
+            <div class="box111">팩스번호 : 070-7614-3123</div>
+            <div class="box12">TEL : 02-3964-3123</div>
+            <div class="box13">
+              평일 오전 10부터 오후 7시까지/점심시간 12시부터 1시까지
+            </div>
+            <div class="box14">토요알 오전 10시부터 오후 3시까지</div>
+            <div class="box15">일요일 휴무</div>
+            <div class="footer-img">
+              <div class="box1">
+                <img src="images/footer_공정거래위원회 1.png" alt="free" />
+              </div>
+              <div class="box2">
+                <img src="images/footer_kcp 1.png" alt="kcp" />
+              </div>
+              <div class="box3">
+                <img src="images/footer_CJ 1.png" alt="cj" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        // animate-aos script
+        AOS.init({
+          anchorPlacement: "center",
+        });
+        // mainbanner
+        $(document).ready(function () {
+          $(".slider").bxSlider({
+            auto: true,
+            pager: true,
+            controls: false,
+            slideWidth: 1920,
+            slideMargin: 0,
+            moveSlides: 1,
+            autoHover: false,
+            infiniteLoop: true,
+          });
+          $(".slidercat").bxSlider({
+            auto: true,
+            pager: true,
+            controls: false,
+            slideWidth: 1920,
+            slideMargin: 0,
+            moveSlides: 1,
+            autoHover: false,
+            infiniteLoop: true,
+          });
+          $(".tab").bxSlider({
+            minSlides: 1,
+            maxSlides: 4,
+            moveSlides: 1,
+            slideWidth: 131,
+            slideMargin: 0,
+            pager: false,
+            controls: false,
+            auto: true,
+            infiniteLoop: true,
+            speed: 2000,
+          });
+          $(".slide_first").bxSlider({
+            minSlides: 1,
+            maxSlides: 4,
+            moveSlides: 1,
+            slideWidth: 330,
+            slideMargin: 30,
+            pager: false,
+            controls: false,
+            auto: true,
+            infiniteLoop: true,
+            speed: 2000,
+          });
+          $(".slide_second").bxSlider({
+            minSlides: 1,
+            maxSlides: 4,
+            moveSlides: 1,
+            slideWidth: 330,
+            slideMargin: 30,
+            pager: false,
+            controls: false,
+            auto: true,
+            infiniteLoop: true,
+            speed: 2000,
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

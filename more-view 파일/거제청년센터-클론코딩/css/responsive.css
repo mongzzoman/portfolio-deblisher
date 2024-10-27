@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+/* 바꿀 내용만 작성하고 우선순위는 똑같이 작성해야 함 */
+/* header */
+@media screen and (max-width:1500px) {
+    header .inner {
+        height: 90px;
+        margin: 0 50px;
+    }
+    header .logo {
+        top: 55%;
+    }
+    header .logo a img {
+        width: 123px;
+        height: 40px;
+    }
+    header .gnb-util {
+        top: 25px;
+    }
+    header .gnb-util .gnb-wrap li {
+        margin-top: 6px;
+    }
+    header .gnb-util .gnb-wrap li a {
+        font-size: 14px;
+    }
+    header .gnb-util .all-menu img {
+        width: 35px;
+        height: 35px;
+    }
+    header .nav {
+        right: 90px;
+        padding: 12px 0;
+    }
+    header .nav .menu > li > a {
+        padding: 0 20px;
+        font-size: 17px;
+        margin: 18px 0 5px;
+    }
+}
+@media screen and (max-width:1220px) {
+    header {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 70px;
+        z-index: 999;
+    }
+    /* hide라는 클래스 추가 할 예정 */
+    header.hide {
+        top: -100px;
+    }
+    header .inner {
+        height: 70px;
+        margin: 0 10px;
+    }
+    /* 메뉴들을 없애고 모바일 버튼이 나오게 */
+    header .nav {
+        display: none;
+    }
+    header .gnb-util {
+        display: none;
+    }
+    .mb-bt {
+        display: block;
+        z-index: 1000;
+    }
+}
+@media screen and (max-width:767px) {
+    header .inner {
+        height: 62px;
+    }
+}
+
+/* visual */
+@media screen and (max-width:1400px) {
+    .visual {
+        height: 100%;
+    }
+    .visual .sw-visual .swiper-slide .vs-slide1 {
+        background-image: none;
+    }
+    .visual .sw-visual .swiper-slide .vs-slide2 {
+        background-image: none;
+    }
+    /* html 안에 만들어놨던 i태그 안에 모바일 용 배너 이미지 넣기 */
+    .visual .sw-visual .swiper-slide .vs-slide1 > i {
+        display: block;
+        background: url('../images/bannerm_1_.jpg')no-repeat center/cover;
+        width: 100%;
+        /* padding-top으로 높이잡기 */
+        padding-top: 50%;
+    }
+    .visual .sw-visual .swiper-slide .vs-slide2 > i {
+        display: block;
+        background: url('../images/bannerm_4_.jpg')no-repeat center/cover;
+        width: 100%;
+        padding-top: 50%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .visual .sw-visual .swiper-slide .vs-slide1 > i, .visual .sw-visual .swiper-slide .vs-slide2 > i {
+        margin-top: 62px;
+    }
+}
+
+/* main - .quick-menu */
+@media screen and (max-width:1300px) {
+    .quick-menu .inner {
+        height: auto;
+    }
+    .quick-menu ul {
+        /* wrap : 부모 넓이보다 요소들의 총 넓이가 크다면 나머지 요소들을 다음줄로 줄바꿈 */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .quick-menu ul li {
+        width: 33.3333%;
+        border-bottom: 1px solid #d9dbde;
+        margin: 0;
+    }
+    .quick-menu ul li:nth-child(3) {
+        border-right: none;
+    }
+    .quick-menu ul li:nth-child(4),
+    .quick-menu ul li:nth-child(5) {
+        border-bottom: none;
+    }
+    .quick-menu ul li:nth-child(4) a,
+    .quick-menu ul li:nth-child(5) a {
+        background-position: 30% 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    .quick-menu ul li {
+        height: auto;
+    }
+    .quick-menu ul li a {
+        font-size: 16px;
+        padding: 20px 0 18px 92px;
+        text-align: left;
+        /* 작성 후 안먹으면 우선순위를 높여주기 위해 !important 적기 */
+        background-position: 35px 12px !important;
+        background-size: 35px 35px !important;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .quick-menu ul {
+        justify-content: start;
+    }
+    .quick-menu ul li {
+        width: 50%;
+    }
+    .quick-menu ul li a {
+        background-position: 15px 12px !important;
+        font-size: 15px;
+        padding: 20px 0 18px 62px;
+    }
+    .quick-menu ul li:nth-child(3) {
+        border-right: 1px solid #d9dbde;
+    }
+    .quick-menu ul li:nth-child(4) {
+        border-bottom: 1px solid #d9dbde;
+    }
+    /* 짝수번째(2n) 오른쪽 선 없애기 */
+    .quick-menu ul li:nth-child(2n) {
+        border-right: none;
+    }    
+}
+
+/* 메인 - .notice */
+@media screen and (max-width:1500px) {
+    .notice .inner {
+        margin: 0 50px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .notice .notice-left {
+        width: 49%;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:1280px) {
+    .notice .inner {
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .notice .notice-left h3, .notice .notice-right h3 {
+        font-size: 20px;
+    }
+    .notice .notice-left ul li a {
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width:767px) {
+    .notice .inner {
+        margin: 0 15px 25px;
+    }
+    .notice .notice-left, .notice .notice-right {
+        width: 100%;
+        padding: 25px 15px;
+        margin: 0;
+    }
+    .notice .inner > * {
+        margin-bottom: 20px;
+    }
+    .notice .notice-left ul li a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:600px) {
+    .notice .notice-left h3, .notice .notice-right h3 {
+        font-size: 18px;
+    }
+}
+
+/* 메인 - .gallery */
+@media screen and (max-width:1600px) {
+    .gallery .inner {
+        margin: 0 50px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .gallery .inner .act-gallery {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .gallery .inner .clip-gallery {
+        width: 100%;
+    }
+    .gallery .clip-gallery .clip {
+        width: 100%;
+        background: rgba(0,0,0,0.2);
+        padding: 40px;
+        text-align: center;
+        height: auto;
+    }
+    .gallery .clip-gallery .clip iframe {
+        width: 70%;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .gallery .inner {
+        margin: 0 20px;
+    }
+    .gallery .inner .act-gallery .gallery-box .gallery-card p em {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1023px) {
+    .gallery .clip-gallery .clip iframe {
+        width: 70%;
+        height: 400px;
+    }
+}
+@media screen and (max-width:767px) {
+    .gallery .inner {
+        margin: 0 15px;
+    }
+    .gallery .clip-gallery .clip iframe {
+        width: 80%;
+        height: 350px;
+    }
+    .gallery .inner .act-gallery .gallery-box .gallery-card p {
+        padding: 10px 15px 0;
+    }
+    .gallery .inner .act-gallery .gallery-box .gallery-card p em {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:600px) {
+    .gallery .inner .act-gallery .gallery-box {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .gallery .clip-gallery .clip iframe {
+        width: 100%;
+        height: 270px;
+    }
+}
+
+/* 메인 - .banner */
+@media screen and (max-width:1580px) {
+    .banner .inner {
+        margin: 0 50px;
+    }
+    .banner .inner .sw-banner {
+        width: 75%;
+        height: 50px;
+    }
+
+    .banner .sw-banner .swiper-slide img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width:1280px) {
+    .banner .inner {
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .banner .inner .sw-banner {
+        width: 800px;
+    }
+    .banner .inner .sw-banner .swiper-slide {
+        width: 160px;
+        height: 50px;
+    }
+    .banner .inner .sw-banner .swiper-slide img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width:1023px) {
+    .banner {
+        /* 안에 컨텐츠가 있으면 auto줄 수 있음 */
+        height: auto;
+        padding: 20px 0;
+        margin: 0;
+    }
+    .banner .inner .banner-control {
+        /* float 준 거를 없애려면 none 처리하면 된다 */
+        float: none;
+        padding: 0;
+        height: auto;
+    }
+    .banner .inner .sw-banner {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* break-point=767px */
+@media screen and (max-width:767px) {
+    .banner .inner {
+        margin: 0 15px;
+    }
+}
+/* break-point=385px */
+@media screen and (max-width:385px) {
+    .banner .inner {
+        margin: 0 10px;
+    }
+}
+
+
+/* footer */
+@media screen and (max-width:1500px) {  
+    .footer .inner {
+        margin: 0 50px;
+    }
+    .footer .footer-top .inner .gotop {
+        width: 48px; height: 48px;
+    }
+}
+@media screen and (max-width:1200px) { 
+    .footer .inner {
+        margin: 0 20px;
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width:767px) { 
+    .footer .inner {
+        margin: 0 15px;
+    }
+    .footer .footer-top .inner {
+        font-size: 13px;
+    }
+    .footer .footer-top .inner .gotop {
+        top: 25%;
+    }
+}
+@media screen and (max-width:450px) {  
+    .footer {
+        font-size: 12px;
+    }
+    .footer .footer-top .inner .btns {
+        padding: 2px 6px;
+    }
+    .footer .footer-top .inner .btns .btn {
+        padding: 2px 5px;
+    }
+    .footer .footer-top .inner .gotop {
+        width: 36px;
+        height: 36px;
+        border-radius: 3px;
+    }
+}
+@media screen and (max-width:385px) { 
+    .footer .footer-top .inner .gotop {
+        top: 11%;
+    }
+}

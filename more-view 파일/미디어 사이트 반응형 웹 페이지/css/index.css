@@ -1,0 +1,93 @@
+/* index.css는 첫 페이지 css */
+/* 첫 페이지 body에 들어갈 내용 */
+body {
+    /* cover는 좌표가 있어야 먹힘 */
+    background: url('../images/bg_visual.png') no-repeat 0 0 / cover;
+    font-size: 1rem;
+}
+body::after {
+    content: "";
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-color: #4621AD;
+    opacity: 0.83;
+    z-index: -1;
+}
+
+
+
+/* visual */
+.visual {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* visual 내 모든 요소들이 x축, y축 가운데 정렬이 되어야 하니까 visual 안에 있는 자식들을 다시 한번에 묶는 div를 만들어주고 한다 */
+    text-align: center;
+    color: #fff;
+}
+.visual h2 {
+    font-size: 2rem;
+}
+.visual .txt {
+    font-size: .7rem;
+    line-height: .9rem;
+    padding: .5rem 0 4.65rem;
+}
+.visual .txt br {
+    display: none;
+}
+.visual .txt br.web {
+    display: block;
+}
+.visual .list {
+    width: 68.2rem;
+    margin: 0 auto 4.75rem;
+    display: flex;
+}
+.visual .list li {
+    flex: 1;
+    background: no-repeat center top / auto 3.6425rem;
+    padding: 4.603rem 0 0; 
+    /* 아이콘이 들어갈 자리를 패딩으로 줌 */
+}
+.visual .list li:nth-child(1) {
+    background-image: url(../images/icon_index1.png);
+}
+.visual .list li:nth-child(2) {
+    background-image: url(../images/icon_index2.png);
+}
+.visual .list li:nth-child(3) {
+    background-image: url(../images/icon_index3.png);
+}
+.visual .list li:nth-child(4) {
+    background-image: url(../images/icon_index4.png);
+}
+.visual .list li strong {
+    font-size: .95rem;
+}
+.visual .list li p {
+    font-size: .9rem;
+    padding: .5rem 0 0;
+}
+.visual .sign_box .btn button {
+    width: 12.6125rem;
+    height: 2.174rem;
+    border-radius: 2.174rem;
+    font-size: 1rem;
+    margin: 0 1.573rem;
+}
+.visual .btn_type1 {
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+}
+.visual .btn_type2 {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+    color: #4621AD;
+    background-color: #fff;
+}
+.visual .mobile_content {
+    display: none;
+}
