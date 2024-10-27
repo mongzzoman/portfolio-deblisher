@@ -1,10 +1,20 @@
 @media screen and (max-width:1594px){
     #header .inner { padding: 0 10%;}
     .works .contents .content .explain button {width: 28%;}
+    .works .webdesign .contents .content .explain button {width: 33%;}
     .intro-inner {width: 48vw;}
     #main .inner {padding: 0 10%;}
     .intro-inner {width: 60vw;}
     .detailview-popup .detailview-popup-wrapper .exit {right: 24%;}
+    .works .contents .content .explain .btns a {margin: 0;}
+    .works .design {height: auto;}
+    .works .design .title {align-items: center; flex-direction: column; margin: 0 auto; width: 100%;}
+    .works .design .contents-box {margin-top: 4rem; 
+        height: auto;
+    }
+    .works .design .contents-box .image, .works .design .contents-box .graphic {height:calc(76vw * 0.2)}
+    .works .design .contents-box .banner {width:calc(76vw * 0.4)}
+    .works .clonecoding .geoje .geoje-txt {font-size: 3.3rem !important;}
 }
 @media screen and (max-width:1200px){
     #header .inner { padding: 0 4%;}
@@ -13,9 +23,25 @@
     #main > .ellipse1 { top: 1%;}
     #main .inner { padding: 0 4%;}
     .intro-inner {width: 64vw;}
-    .works .design {height: calc(100vh - 10rem);}
+    .works .contents .content .explain h2 {font-size: 4rem;}
+    .works .contents .gegomall .explain .btns a {margin: 0;}
+    .works .design {height: auto;}
     .works .design .title {flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 0 auto; top: 4%;}
-    .works .design .contents-box {margin-top: 4rem;}
+    .works .design .contents-box {margin-top: 8rem; height: auto;}
+    .works .contents .content .explain button {width: 36%;}
+    .works .clonecoding .geoje .geoje-txt {font-size: 3.3rem !important;}
+    .works .design .contents-box .banner1 {order: 1; width: 95vw; height: calc(95vw / 2.12);}
+    .works .design .contents-box .banner2 {order: 2; width: 95vw; height: calc(95vw / 2.12);}
+    .works .design .contents-box .banner3 { order: 3; width: 95vw; height: calc(95vw / 2.12);}
+    .works .design .contents-box .graphic1 { order: 4; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic2 {order: 5; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic3 {order: 6; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic4 {order: 7; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic5 {order: 8; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic6 {order: 9; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic7 {order: 10; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic8 {order: 11; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic9 {order: 12; width: 28vw; height: calc(28vw);}
     .design-popup-img-box .popup-title {gap: 1rem; flex-direction: column; align-items: start;}
     .detailview-popup .detailview-popup-wrapper .exit {right: 16%;}
 }
@@ -48,7 +74,7 @@
     .works .contents .content .explain button {width: 30%;}
     .works .contents .gegomall .explain .btns a {padding: .8rem .3rem; margin: 0;}
     .works .webdesign .contents .content .explain {gap: 1.5rem !important;}
-    .works .design {height: calc(100vh - 16rem); padding-bottom: 7rem;}
+    .works .webdesign .contents .content .explain button {width: 45%;}
     .works .design .title {top: 6%;}
     .works .design .tag li {padding: .5rem; font-size: .7rem;}
     .works .design .contents-box .left-box > div, .works .design .contents-box .right-box > div {height: 180px;}
@@ -89,8 +115,8 @@
     .introduce .introduce-contents {gap: 30px;}
     .introduce .btns a .txt {line-height: 34px;}
     .introduce .introduce-contents .introduce-txt p {padding: 0 0 20px; font-size: 1.3rem;}
-    .introduce .skill-box .img-box {width: 5.5rem; height: 5.5rem; border-radius: 1.5rem;}
-    .introduce .skill-box .img-box img {width: 4rem; height: 4rem;}
+    .introduce .skill-box .img-box {width: 4.5rem; height: 4.5rem; border-radius: 1rem;}
+    .introduce .skill-box .img-box img {width: 3.5rem; height: 3.5rem;}
     .introduce .tag ul li {font-size: 1rem;}
     .works h1 {text-align: center; font-size: 4rem;}
     .works .contents {margin-top: 3rem;}
@@ -99,16 +125,14 @@
         width: 100%; 
         height: 30rem;
     }
-    /* .works .contents .content .image-box .image-click .image{padding-top: 40%;} */
     .works .contents .content .explain {width: 100%; padding: 0;}
     .works .contents .content .explain h2 {text-align: center; width: 80%; margin: 0 auto;}
-    .works .contents .content .explain p {text-align: center; width: 80%; margin: 0 auto; line-height: 1.5;}
+    .works .contents .content .explain p {text-align: center; width: 100%; line-height: 1.5;}
     .works .contents .content .explain .tag {justify-content: center;}
     .works .contents .content .explain .btns {text-align: center;}
     .works .contents .content .explain button {margin: 0 auto;}
-    .works .design {height: calc(100vh - 30rem); padding-bottom: 8rem;}
     .works .design .title {flex-direction: column; align-items: center; top: 8%;}
-    .works .design .contents-box {gap: 10px; margin-top: 6rem;}
+    .works .design .contents-box {gap: 10px; margin-top: 12rem;}
     .works .design .tag {flex-wrap: wrap; justify-content: center; gap: 10px;}
     .works .design .tag li {padding: .4rem 1.4rem;}
     .design-popup-img-box {width: 96%;}
@@ -124,18 +148,43 @@
 }
 
 @media screen and (max-width:540px){
-    .intro-inner {
-        /* min-width: 90vw; */
-        height: 64vh;
-    }
+    .intro-inner { height: 64vh; }
     .introduce .btns .icon {width: 100% !important;}
     .introduce .btns .resume .icon {background-size: 30.5px 30.5px;}
     .introduce .btns a {width: 30%; gap: 10px; border-radius: 10px; padding: 4px;}
     .introduce .btns a .txt {display: none;}
-    .introduce .skill-box .img-box {width: 3.5rem; height: 3.5rem; border-radius: .8rem;}
-    .introduce .skill-box .img-box img { width: 2.5rem; height: 2.5rem;}
+    .introduce .introduce-contents {gap: 10px; align-items: center; height: 65%;}
+    .introduce .introduce-contents .introduce-txt {height: auto;}
+    .introduce .introduce-contents .introduce-txt .txts p {font-size: .8rem;}
+    .introduce .skill-box {height: 15%;}
+    .introduce .skill-box .img-box {width: 3rem; height: 3rem; border-radius: .8rem;}
+    .introduce .skill-box .img-box img { width: 2rem; height: 2rem;}
+    .introduce .skill-box > div > p {display: none;}
     .introduce .tag ul li {font-size: .7rem;}
-    .works .design {height: calc(100vh - 38rem);}
+    .works h1 {font-size: 3rem;}
+    .works .contents .content .explain h2 {font-size: 3rem;}
+    .works .contents .content .image-box {height: 20rem;}
+    .works .contents .gegomall .explain .btns a {margin: 0;}
+    .works .clonecoding .geoje .geoje-txt {font-size: 2.5rem !important; letter-spacing: -.3rem;}
+    .works .webdesign .contents .content .explain button {width: 45%; color: #333;}
+    .works .design {height: auto;}
+    .works .design .contents-box {height: auto; margin-top: 13rem;}
+    .works .design .contents-box .image {height: 158px; width: 100%;}
+    .works .design .contents-box .banner1 {order: 1; width: 95vw; height: calc(95vw / 2.12);}
+    .works .design .contents-box .banner2 {order: 2; width: 95vw; height: calc(95vw / 2.12);}
+    .works .design .contents-box .banner3 { order: 3; width: 95vw; height: calc(95vw / 2.12);}
+    .works .design .contents-box .graphic1 { order: 4; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic2 {order: 5; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic3 {order: 6; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic4 {order: 7; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic5 {order: 8; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic6 {order: 9; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic7 {order: 10; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic8 {order: 11; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic9 {order: 12; width: 28vw; height: calc(28vw);}
+    #footer .inner h1 {line-height: 3rem;}
+    #footer .ellipse1 {width: 20rem; height: 20rem;}
+    #footer .ellipse2 {width: 25rem; height: 25rem; bottom: -6rem;}
     .design-popup-img-box {padding: 11.5% 14%; height: 70%;}
     .design-popup-img-box .popup-title {gap: 1rem; flex-direction: column; align-items: start;}
     .design-popup-img-box .first-title {font-size: 1rem;}
@@ -158,68 +207,21 @@
         }
     .introduce .introduce-contents {gap: 10px;}
     .introduce .introduce-contents .introduce-txt p { padding: 0 0 10px;}
-    .introduce .skill-box {flex-wrap: wrap; justify-content: space-between; gap: 10px; height: 22%;}
+    .introduce .skill-box {flex-wrap: wrap; justify-content: space-between; gap: 5px; height: 12%;}
     .introduce .skill-box > div {width: auto;}
-    .introduce .skill-box > div > p {display: none;}
     .introduce .skill-box .img-box {width: 3.2rem; height: 3.2rem;}
     .introduce .skill-box .img-box img {width: 2.5rem; height: 2.5rem;}
-    .introduce .tag ul {}
-    /* .intro-inner {width: 338px;}
-    .introduce .btns {gap: 10px;}
-    .introduce .btns a {width: 30%; border-radius: 10px; gap: 5px; padding: 4px 8px;}
-    .introduce .btns .icon {background-size: 100% !important; }
-    .introduce .introduce-contents {height: 150px; gap: 10px; justify-content:flex-start; padding: 20px 0;}
-    .introduce .introduce-contents .profile {width: 45%;}
-    .introduce .introduce-contents .introduce-txt p {padding: 0; line-height: .6;}
-    .introduce .introduce-contents .introduce-txt p {padding: 0;}
-    .introduce .introduce-contents .introduce-txt p.point {line-height: 1;}
-    .introduce .skill-box {flex-wrap: wrap; gap: 18px; justify-content: center;}
-    .introduce .skill-box .img-box {width: 4.5rem; height: 4.5rem; border-radius: 12px; margin: 0 auto;}
-    .introduce .skill-box .img-box img {width: 3.5rem; height: 3.5rem;}
-    .introduce .tag ul {flex-wrap: wrap; gap: 18px; justify-content: center;} */
-    .works .contents .content .image-box { height: 20rem;}
     .works .contents .content .explain {gap: 1rem;}
     .works .contents .content .explain h2 {font-size: 3.5rem; padding: 0;}
     .works .contents .content .explain .tag {width: 80%; margin: 0 auto;}
-    .works .clonecoding .geoje .geoje-txt {font-size: 3.2rem !important;}
-    .works .design {height: calc(146px*3 + 99px*3 + 50px);}
+    .works .clonecoding .geoje .geoje-txt {font-size: 3rem !important;}
+    .works .design {height:auto;}
     .works .design .title {gap: 1rem;}
     .works .design .tag {flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 10px;}
     .works .design .contents-box {gap: 10px;  margin-top: 8rem;}
     .works .design .contents-box .image {height: 146px;}
-    .works .design .contents-box .graphic {width: 99px; height: 99px;}
-     .works .design .contents-box .banner1 {
-        order: 1; width: 100%;
-    }
-    .works .design .contents-box .banner2 {
-        order: 2; width: 100%;
-    }
-    .works .design .contents-box .banner3 {
-        order: 3; width: 100%;
-    }
-    .works .design .contents-box .graphic1 {
-        order: 4;
-    }
-    .works .design .contents-box .graphic2 {
-        order: 5;
-    }
-    .works .design .contents-box .graphic3 {
-        order: 6;
-    }
-    .works .design .contents-box .graphic4 {
-        order: 7;
-    }
-    .works .design .contents-box .graphic5 {
-        order: 8;
-    }
-    .works .design .contents-box .graphic6 {
-        order: 9;
-    }
-    /* .works .design .contents-box .left-box {gap:10px;}
-    .works .design .contents-box .right-box {gap:10px;}
-    .works .design .contents-box .right-box .right-first, .works .design .contents-box .right-box .right-second, .works .design .contents-box .right-box .right-third {gap: 10px;}
-    .works .design .contents-box .left-box > div {height: 160px;}
-    .works .design .contents-box .right-box > div, .works .design .contents-box .right-box .image {height: 108px !important;} */
+    .works .design .contents-box .graphic {width: 104px; height: 104px;}
+
     .design-popup-img-box {padding: 8.5% 3%; height: 60%;}
     .design-popup-img-box .design-img {width: calc(100% - 2rem);}
     .detailview-popup .detailview-popup-wrapper .exit {right: 18%; width: 16px; height: 16px;}
