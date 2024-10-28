@@ -33,24 +33,24 @@
     .works .design .contents-box .banner1 {order: 1; width: 95vw; height: calc(95vw / 2.12);}
     .works .design .contents-box .banner2 {order: 2; width: 95vw; height: calc(95vw / 2.12);}
     .works .design .contents-box .banner3 { order: 3; width: 95vw; height: calc(95vw / 2.12);}
-    .works .design .contents-box .graphic1 { order: 4; width: 28vw; height: calc(28vw);}
-    .works .design .contents-box .graphic2 {order: 5; width: 28vw; height: calc(28vw);}
-    .works .design .contents-box .graphic3 {order: 6; width: 28vw; height: calc(28vw);}
-    .works .design .contents-box .graphic4 {order: 7; width: 28vw; height: calc(28vw);}
-    .works .design .contents-box .graphic5 {order: 8; width: 28vw; height: calc(28vw);}
-    .works .design .contents-box .graphic6 {order: 9; width: 28vw; height: calc(28vw);}
-    .works .design .contents-box .graphic7 {order: 10; width: 28vw; height: calc(28vw);}
-    .works .design .contents-box .graphic8 {order: 11; width: 28vw; height: calc(28vw);}
-    .works .design .contents-box .graphic9 {order: 12; width: 28vw; height: calc(28vw);}
+    .works .design .contents-box .graphic1 { order: 4; width: 29.5vw; height: calc(29.5vw);}
+    .works .design .contents-box .graphic2 {order: 5; width: 29.5vw; height: calc(29.5vw);}
+    .works .design .contents-box .graphic3 {order: 6; width: 29.5vw; height: calc(29.5vw);}
+    .works .design .contents-box .graphic4 {order: 7; width: 29.5vw; height: calc(29.5vw);}
+    .works .design .contents-box .graphic5 {order: 8; width: 29.5vw; height: calc(29.5vw);}
+    .works .design .contents-box .graphic6 {order: 9; width: 29.5vw; height: calc(29.5vw);}
+    .works .design .contents-box .graphic7 {order: 10; width: 29.5vw; height: calc(29.5vw);}
+    .works .design .contents-box .graphic8 {order: 11; width: 29.5vw; height: calc(29.5vw);}
+    .works .design .contents-box .graphic9 {order: 12; width: 29.5vw; height: calc(29.5vw);}
     .design-popup-img-box .popup-title {gap: 1rem; flex-direction: column; align-items: start;}
     .detailview-popup .detailview-popup-wrapper .exit {right: 16%;}
 }
-@media screen and (max-width:1080px) and (min-width:721px) {
+@media screen and (max-width:1080px) and (min-width:747px) {
     html {font-size: 16px;}
     body {font-size: 1rem;}
     #header .inner { padding: 0 4%;}
-    #main > .ellipse1 { top: 3%; right: 40%;}
-    #main > .ellipse2 { top: 1%; }
+    #main > .ellipse1 { top: 3%; right: -17%;}
+    #main > .ellipse2 { top: -2%; }
     .first-page .txt-1 { margin-left: 3.5rem;}
     .first-page .main-text { line-height: 10rem;}
     .first-page .txt-2 { margin-right: 3rem;}
@@ -59,10 +59,7 @@
     .introduce .btns a {width: 33%;}
     .works h1 { font-size: 4.5rem; }
     .works .contents .content { gap: 30px;}
-    .works .contents .content .image-box {
-        width: 55%; 
-        height: 28.7rem;
-    }
+    .works .contents .content .image-box {width: 55%;  height: 28.7rem;}
     .works .publishing .media-site .image-click {
         background-size: 125% !important;
         background-position: -3.5rem 2.5rem !important;
@@ -77,7 +74,16 @@
     .works .webdesign .contents .content .explain button {width: 45%;}
     .works .design .title {top: 6%;}
     .works .design .tag li {padding: .5rem; font-size: .7rem;}
-    .works .design .contents-box .left-box > div, .works .design .contents-box .right-box > div {height: 180px;}
+    .works .design .contents-box {margin-top: 12rem;}
+    .works .design .contents-box .graphic1 {width: 28.8vw; height: calc(28.8vw);}
+    .works .design .contents-box .graphic2 {width: 28.8vw; height: calc(28.8vw);}
+    .works .design .contents-box .graphic3 {width: 28.8vw; height: calc(28.8vw);}
+    .works .design .contents-box .graphic4 {width: 28.8vw; height: calc(28.8vw);}
+    .works .design .contents-box .graphic5 {width: 28.8vw; height: calc(28.8vw);}
+    .works .design .contents-box .graphic6 {width: 28.8vw; height: calc(28.8vw);}
+    .works .design .contents-box .graphic7 { width: 28.8vw; height: calc(28.8vw);}
+    .works .design .contents-box .graphic8 { width: 28.8vw; height: calc(28.8vw);}
+    .works .design .contents-box .graphic9 { width: 28.8vw; height: calc(28.8vw);}
     .design-popup-img-box .design-img {height: auto; width: calc(100% - 15rem);}
     #footer .inner { padding: 0 4.7%;}
     #footer .inner h1 {line-height: 8rem;}
@@ -88,7 +94,7 @@
     .detailview-popup .detailview-popup-wrapper .exit {right: 13%;}
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:746px) {
     html {font-size: 15px;}
     body {font-size: 1rem;}
     #header {height: 40px;}
@@ -98,8 +104,8 @@
     #header .menu {display: none;}
     #header .header-right {order: 3; display: block;}
     #header .darkBtn {padding: 0.1rem 0.15rem;}
-    #main > .ellipse1 {top: 2.5%; width: 62vw; height: calc(62vw);}
-    #main > .ellipse2 {top: 1.5%; width: 80vw; height: calc(80vw);}
+    #main > .ellipse1 {top: 3.5%; right: -24%; width: 62vw; height: calc(62vw);}
+    #main > .ellipse2 {top: -0.5%; width: 80vw; height: calc(80vw);}
     #main .inner {padding: 0 3.5%;}
     .first-page .text-box p {margin: 0 auto; text-align: center;}
     .first-page .main-text {line-height: 9rem;}
@@ -127,7 +133,7 @@
     }
     .works .contents .content .explain {width: 100%; padding: 0;}
     .works .contents .content .explain h2 {text-align: center; width: 80%; margin: 0 auto;}
-    .works .contents .content .explain p {text-align: center; width: 100%; line-height: 1.5;}
+    .works .contents .content .explain p {text-align: center; width: 90%;margin: 0 auto; line-height: 1.8;}
     .works .contents .content .explain .tag {justify-content: center;}
     .works .contents .content .explain .btns {text-align: center;}
     .works .contents .content .explain button {margin: 0 auto;}
@@ -138,8 +144,8 @@
     .design-popup-img-box {width: 96%;}
     .design-popup-img-box .design-img {width: calc(100% - 10rem); height: auto;}
     .design-popup-img-box .first-title {font-size: 1.1rem;}
-    #footer .inner {padding: 0 2.5%;}
-    #footer .inner h1 {line-height: 6rem;}
+    #footer .inner {padding: 0 2.5%; text-align: center;}
+    #footer .inner h1 {line-height: 6rem; text-align: center;}
     #footer .ellipse1 {width: 30rem; height: 30rem;}
     #footer .ellipse2 {width: 42rem; height: 42rem;}
     .detailview-popup .detailview-popup-wrapper .detailview-popup-img-box {width: calc(100% - 6rem);}
@@ -150,8 +156,9 @@
 @media screen and (max-width:540px){
     .intro-inner { height: 64vh; }
     .introduce .btns .icon {width: 100% !important;}
-    .introduce .btns .resume .icon {background-size: 30.5px 30.5px;}
-    .introduce .btns a {width: 30%; gap: 10px; border-radius: 10px; padding: 4px;}
+    .introduce .btns .instagram1 .icon, .introduce .btns .instagram2 .icon {background-size: 29px 29px;}
+    .introduce .btns .resume .icon {background-size: 30px 30px;}
+    .introduce .btns a {width: 13%; gap: 10px; border-radius: 10px; padding: 4px;}
     .introduce .btns a .txt {display: none;}
     .introduce .introduce-contents {gap: 10px; align-items: center; height: 65%;}
     .introduce .introduce-contents .introduce-txt {height: auto;}
@@ -160,7 +167,8 @@
     .introduce .skill-box .img-box {width: 3rem; height: 3rem; border-radius: .8rem;}
     .introduce .skill-box .img-box img { width: 2rem; height: 2rem;}
     .introduce .skill-box > div > p {display: none;}
-    .introduce .tag ul li {font-size: .7rem;}
+    .introduce .tag ul {justify-content: center; flex-wrap: wrap; gap: 5px;}
+    .introduce .tag ul li {font-size: .8rem; padding: 2% 6%;}
     .works h1 {font-size: 3rem;}
     .works .contents .content .explain h2 {font-size: 3rem;}
     .works .contents .content .image-box {height: 20rem;}

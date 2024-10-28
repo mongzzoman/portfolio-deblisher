@@ -167,6 +167,7 @@ $(document).ready(function(){
       $('.introduce .introduce-contents .introduce-txt').toggleClass('dark');
       $('.introduce .skill-box p').toggleClass('dark');
       $('.works h1').toggleClass('dark');
+      // $('.works .publishing .portfolio .image-click').toggleClass('dark');
       $('.works .contents .content .image-box').toggleClass('dark');
       $('.works .contents .content .explain p').toggleClass('dark');
       $('.works .contents .content .explain h2').toggleClass('dark');

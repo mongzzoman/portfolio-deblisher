@@ -296,29 +296,26 @@ body {font-size: 1rem;}
 }
 #main > .ellipse1, #main > .ellipse2 {
     display: block;
-    background: url(../images/img_deblisher_ellipse.png) no-repeat center / 100% auto;
     position: absolute;
     border-radius: 50%;
-    /* transform: translate(-50%,-50%); */
 }
 #main > .ellipse1 {
-    mix-blend-mode: multiply;
+    background: url(../images/img_footer_ellipse2.png) no-repeat center / 100% auto;
+    mix-blend-mode:difference;
     width: 50vw;
     height: calc(50vw);
-    top: 0%; right: 45%;
-    transform: rotate(125deg);
-    transform-origin: bottom right;
+    top: 3%; right: -15%;
 }
 #main > .ellipse2 {
-    mix-blend-mode: multiply;
+    background: url(../images/img_footer_ellipse1.png) no-repeat center / 100% auto;
+    mix-blend-mode:difference;
     width: 70vw;
     height: calc(70vw);
-    top: -1%; left: -35%;
-    transform: rotate(-30deg);
-    transform-origin: top left;
+    top: -5%; left: -29%;
 }
 #main > .ellipse1.dark, #main > .ellipse2.dark {
-    mix-blend-mode: overlay;
+    mix-blend-mode: color-dodge;
+    opacity: .5;
 }
 #main .inner {
     padding: 0 11.5%;
@@ -350,16 +347,13 @@ body {font-size: 1rem;}
     font-weight: normal;
 }
 .first-page .txt-1 {
-    font-family: "legquinne";
+    font-family: "chosun";
+    font-family: "suite";
     text-align: left;
-    font-size: 1.2rem;
-    margin-left: 1rem;
+    font-size: 1rem;
+    margin-left: 2rem;
     letter-spacing: .1rem;
-    font-weight: bold;
-}
-.first-page .text-box .txt-1 span {
-    color: #727272;
-    letter-spacing: .12rem;
+    /* font-weight: bold; */
 }
 .first-page .text-box .txt-1 span.dark {
     color: #aaaaaa;
@@ -376,11 +370,12 @@ body {font-size: 1rem;}
 }
 .first-page .txt-2 {
     font-family: "chosun";
+    font-family: "suite";
     text-align: right;
     font-size: 1rem;
     /* font-weight: bold; */
     opacity: .8;
-    margin-right: .5rem;
+    margin-right: 1.5rem;
     letter-spacing: .05rem;
 }
 
@@ -824,13 +819,11 @@ body {font-size: 1rem;}
 
 /* image-click thumbnail change */
 .works .publishing .portfolio .image-click {
-    background: url(../images/img_portfolio_thumbnail-light.png) no-repeat center/cover;
-    animation: portfolio 5s ease infinite ;
+    background: url(../images/img_portfolio_thumbnail-dark.png) no-repeat center/cover;
 }
-@keyframes portfolio {
-    50% {
-        background-image: url(../images/img_portfolio_thumbnail-dark.png);
-    }
+.works .publishing .portfolio .image-click.dark {
+    background: url(../images/img_portfolio_thumbnail-light.png) no-repeat 0 2.5rem /cover;
+
 }
 .works .publishing .gegomall .image-click {
     background: url(../images/img_개고몰_thumbnail.png) no-repeat center/cover;
@@ -1143,15 +1136,21 @@ body {font-size: 1rem;}
     color: #e2e2e2;
     mix-blend-mode: normal;
 }
-#footer .inner .coment {
-    font-family: "Chosun";
-    color: #333;
+#footer .inner .comment {
+    font-family: "suite";
+    color: #727272;
     font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     padding-bottom: 8rem;
     margin-top: 1rem;
+    letter-spacing: .02rem;
 }
-#footer .inner .coment.dark {
+#footer .inner .comment span {
+    font-family: "Montserrat", sans-serif;
+    color: #5c5c5c;
+    font-weight: 500;
+}
+#footer .inner .comment.dark {
     color: #e2e2e2;
     font-weight: normal;
 }
