@@ -353,7 +353,6 @@ body {font-size: 1rem;}
     font-size: 1rem;
     margin-left: 2rem;
     letter-spacing: .1rem;
-    /* font-weight: bold; */
 }
 .first-page .text-box .txt-1 span.dark {
     color: #aaaaaa;
@@ -373,15 +372,12 @@ body {font-size: 1rem;}
     font-family: "suite";
     text-align: right;
     font-size: 1rem;
-    /* font-weight: bold; */
     opacity: .8;
     margin-right: 1.5rem;
     letter-spacing: .05rem;
 }
 
 /* introduce */
-.introduce {
-}
 .intro-inner {
     width: 778px;
     height: 700px;
